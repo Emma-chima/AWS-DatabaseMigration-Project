@@ -6,7 +6,7 @@ This is just me documenting my very first attempt at using **AWS Database Migrat
 
 ## 💡 What I Did
 
-I created a simple MySQL database called `employees`, with just one table called `staff`. It’s not anything fancy—just a few rows of dummy data like names and job positions.
+I created a simple MySQL database called `employees`, with just one table called `staff`. It’s not anything fancy just a few rows of dummy data like names and job positions.
 
 The goal? **Migrate it from MySQL to PostgreSQL** using AWS DMS.
 
@@ -16,7 +16,7 @@ That’s literally it.
 
 1. **Created the MySQL database and table** manually through the CLI.
 2. **Created a replication instance** on AWS.
-3. **Set up source and target endpoints** — source was MySQL, target was PostgreSQL.
+3. **Set up source and target endpoints** source was MySQL, target was PostgreSQL.
 4. Ran a **premigration assessment** (failed the first time lol).
 5. Granted the necessary **permissions to the DMS user** on MySQL.
 6. Created the **migration task** and ran it.
@@ -32,6 +32,6 @@ That’s literally it.
 ## ✅ What I Learned
 
 - How to set up and run a DMS migration task (finally 😅).
-- That **permissions are super important**—without the right GRANTs, nothing works.
+- That **permissions are super important** without the right GRANTs, nothing works.
 - How to use the **AWS CLI** to check the status of migration tasks and troubleshoot.
 - Also learned how to clean up my resources properly so I don't get billed for things I’m no longer using.
